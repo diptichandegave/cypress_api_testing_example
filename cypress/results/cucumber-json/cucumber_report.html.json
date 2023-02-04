@@ -1,0 +1,227 @@
+[
+  {
+    "description": "    API testing scenarios",
+    "keyword": "Feature",
+    "name": "API Testing",
+    "line": 1,
+    "id": "api-testing",
+    "tags": [],
+    "uri": "apiTesting.feature",
+    "elements": [
+      {
+        "id": "api-testing;verify-when-user-access-api-it-should-work-properly",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify when user access API it should work properly",
+        "tags": [
+          {
+            "name": "@happy-path",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I access the API to get music festival data",
+            "result": {
+              "status": "passed",
+              "duration": 2319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I verify API is working",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing;verify-each-band-should-have-festival-name",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify each band should have festival name",
+        "tags": [
+          {
+            "name": "@happy-path",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I access the API to get music festival data",
+            "result": {
+              "status": "passed",
+              "duration": 409000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I verify API is working",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I verify each band have festival name",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Festival name is missing: expected undefined not to be undefined\n    at eval (http://localhost:4200/__cypress/tests?p=cypress\\integration\\features\\apiTesting.feature:105:63)\nat Array.forEach (<anonymous>)\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress\\integration\\features\\apiTesting.feature:101:32)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing;verify-all-text-follows-pascal-case",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify all text follows pascal case",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 16
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I access the API to get music festival data",
+            "result": {
+              "status": "passed",
+              "duration": 1015000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I verify API is working",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Data should not be empty: expected '' not to be empty\n    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress\\integration\\features\\apiTesting.feature:93:68)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I verify all text follows pascal case",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing;verify-festivals-names-are-unique",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Verify festivals names are unique",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 22
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I access the API to get music festival data",
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I verify API is working",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I verify festival names are unique",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing;verify-band-names-are-unique-under-each-festival",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify band names are unique under each festival",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I access the API to get music festival data",
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I verify API is working",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I verify band names are not repeated under each festival",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+    "defaultCommandTimeout": 6000,
+    "pageLoadTimeout": 20000,
+    "baseUrl": "http://localhost:4200/festivals",
+    "apiUrl" : "https://eacp.energyaustralia.com.au/codingtest",
+    "env": {
+    "qa": {
+      "url": "http://localhost:4200/festivals"
+    },
+    "dev": {
+      "url": "http://localhost:4200/festivals"
+    },
+    "env": "qa"
+  }
+}
