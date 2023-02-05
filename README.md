@@ -1,6 +1,6 @@
 # cypress_api_testing_example
 
-This project demonstrates how to use cypress test automation framework to test API. This solution is tested with chrome and electron browsers which covers following scenarios
+This project demonstrates how to use cypress test automation framework to test API. This solution covers following scenarios
 
     - Verify when user access API it should work properly
     - Verify each band should have festival name
@@ -14,20 +14,20 @@ This project demonstrates how to use cypress test automation framework to test A
 - Chrome
 
 ## Cypress Directory Structure	
-- Feature Files should be under `cypress-test-automation-example\cypress\integration\features\*.feature*`.
-- Step definitions should be kept under `cypress-test-automation-example\cyprss\support\step_definitions\*.js`.
-- Config File should be kept under the folders `cypress-test-automation-example\cypress\plugins\index.js`.
-- Page Object Models can be found under `cypress-test-automation-example\cypress\support\pages\*.js`.
-- Reports are generated under `cypress-test-automation-example\cypress\reports\*.xml` after test execution.
-- Results of the Reports are generated under `cypress-test-automation-example\cypress\results\cucumber-json\*.json` after test execution
-- Videos of Test Execution generated under `cypress-test-automation-example\cypress\videos\features\*.feature.mp4` after test execution.	
+- Feature Files should be under `cypress-api-automation-example\cypress\integration\features\*.feature*`.
+- Step definitions should be kept under `cypress-api-automation-example\cyprss\support\step_definitions\*.js`.
+- Config File should be kept under the folders `cypress-api-automation-example\cypress\plugins\index.js`.
+- Page Object Models can be found under `cypress-api-automation-example\cypress\support\pages\*.js`.
+- Reports are generated under `cypress-api-automation-example\cypress\reports\*.xml` after test execution.
+- Results of the Reports are generated under `cypress-api-automation-example\cypress\results\cucumber-json\*.json` after test execution
+- Videos of Test Execution generated under `cypress-api-automation-example\cypress\videos\features\*.feature.mp4` after test execution.	
 
 ## To execute the automation suite:
 
 - Clone this repository
 - Install dependencies
 ```
-cd cypress-test-automation-example
+cd cypress-api-automation-example
 npm install
 ```
 - To run test suite (This will run test suite with default cypress browser Electron in headless mode)
